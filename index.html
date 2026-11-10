@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Style Notes — Outfit inspiration</title>
+    <meta
+      name="description"
+      content="A personal styling moodboard: everyday outfits, considered colours and little details."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="logo">style notes<i>.</i></a>
+      <nav>
+        <a href="#outfits">The outfit edit</a
+        ><a href="#approach">Behind the styling</a
+        ><button class="saved" id="saved">♡ My board <span>0</span></button>
+      </nav>
+    </header>
+    <main class="layout">
+      <section class="hero">
+        <div>
+          <span class="eyebrow"
+            >A personal styling journal · Autumn / Winter</span
+          >
+          <h1>A little inspiration.<br />A whole <em>new look.</em></h1>
+          <p>
+            Everyday pieces, unexpected pairings. Explore a collection of outfit
+            ideas, colour stories and details worth saving.
+          </p>
+          <a
+            href="#outfits"
+            style="
+              display: inline-block;
+              margin-top: 10px;
+              border-bottom: 1px solid;
+              padding-bottom: 6px;
+            "
+            >Find your next outfit &nbsp; ↘</a
+          >
+        </div>
+        <aside class="heroaside">
+          <span class="eyebrow">On the moodboard</span>
+          <h2>Warm tones.<br />Cool mornings.</h2>
+          <div class="palette">
+            <span style="background: #e8d9bd"></span
+            ><span style="background: #804337"></span
+            ><span style="background: #424f3c"></span
+            ><span style="background: #8896a1"></span
+            ><span style="background: #302e29"></span>
+          </div>
+          <p>
+            Oat, burgundy, olive & a little denim.<br />The colours tying this
+            edit together.
+          </p>
+        </aside>
+      </section>
+      <section id="outfits">
+        <div class="toolbar">
+          <div class="filters">
+            <button class="filter active" data-filter="All">All looks</button
+            ><button class="filter" data-filter="Everyday">Everyday</button
+            ><button class="filter" data-filter="City">City days</button
+            ><button class="filter" data-filter="Evening">After hours</button
+            ><button class="filter" data-filter="Weekend">Slow weekends</button>
+          </div>
+          <span class="count" id="count"></span>
+        </div>
+        <div class="grid" id="grid"></div>
+      </section>
+      <section class="note" id="approach">
+        <div>
+          <span class="eyebrow">Behind the styling</span>
+          <h2>Good outfits start<br />with a small idea.</h2>
+          <p>
+            A personal concept exploring colour, proportion and product
+            presentation. These AI-generated outfit concepts are inspiration,
+            not products for sale or collaborations with a retailer.
+          </p>
+          <span
+            style="
+              font:
+                italic 22px &quot;Playfair Display&quot;,
+                serif;
+            "
+            >A styling study by Andra Rusu</span
+          >
+        </div>
+        <ol>
+          <li>
+            <strong>Start with a colour story.</strong>Repeat one shade in an
+            accessory to make the whole look feel connected.
+          </li>
+          <li>
+            <strong>Give the eye a focal point.</strong>A sculptural bag, a rich
+            knit or a long coat can do the talking.
+          </li>
+          <li>
+            <strong>Balance the proportions.</strong>Pair relaxed layers with a
+            more defined shape underneath.
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer>
+      <span>STYLE NOTES © 2026 · Personal concept project</span
+      ><span>AI-generated styling imagery · Outfit ideas, not a shop</span>
+    </footer>
+    <dialog id="detail">
+      <button class="close" aria-label="Close outfit details">×</button>
+      <div id="modal"></div>
+    </dialog>
+    <div class="toast" role="status"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
